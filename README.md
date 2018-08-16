@@ -25,6 +25,8 @@ The original image and the transformed image is shown here:
 
 Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image
 
+| Transform  | 
+|:--------------------:|
 ![color transform](/images/color_transform.png)
 
 
