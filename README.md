@@ -12,7 +12,7 @@ The basic objective of this project is to:
 - Warp the detected lane boundaries back onto the original image.
 - Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position
 
-### Compute the camera calibration matrix
+### Compute the camera calibration matrix and apply distortion correction
 
 The code for this step is contained in the first two code cells of the Jupyter notebook project.ipynb.
 
@@ -20,6 +20,11 @@ The OpenCV functions findChessboardCorners and calibrateCamera are used for imag
 
 The original image and the transformed image is shown here:
 ![before-after comparison](/images/undistort_output.png)
+
+###Apply color transforms, gradient to create a threshold binary image
+
+Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image.
+![color transform](/images/color transform.png)
 
 
 
