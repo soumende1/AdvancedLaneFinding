@@ -23,7 +23,8 @@ The original image and the transformed image is shown here:
 
 ###Apply color transforms, gradient to create a threshold binary image
 
-Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image.
+Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image
+
 ![color transform](/images/color_transform.png)
 
 
