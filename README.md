@@ -70,26 +70,18 @@ Sliding Windows Search for Lane markers.
 
 ### Computing Radius of Curvature
 
-The radius of curvature is based upon this ![website](https://www.intmath.com/applications-differentiation/8-radius-curvature.php) and calculated using this formula (represented in simplified form)
+The radius of curvature is based upon this [website](https://www.intmath.com/applications-differentiation/8-radius-curvature.php) and calculated using this formula (represented in simplified form)
 
-curve_radius = ((1 + (2*fit[0]*y_0*y_meters_per_pixel + fit[1])**2)**1.5) / np.absolute(2*fit[0])
+     curve_radius = ((1 + (2*fit[0]*y_0*y_meters_per_pixel + fit[1])**2)**1.5) / np.absolute(2*fit[0])
 
 In this example, fit[0] is the first coefficient (the y-squared coefficient) of the second order polynomial fit, and fit[1] is the second (y) coefficient. y_0 is the y position within the image upon which the curvature calculation is based (the bottom-most y - the position of the car in the image - was chosen). y_meters_per_pixel is the factor used for converting from pixels to meters. This conversion was also used to generate a new fit with coefficients in terms of meters.
 
 The position of the vehicle with respect to the center of the lane is calculated with the following lines of code:
 
-lane_center_position = (r_fit_x_int + l_fit_x_int) /2
-center_dist = (car_position - lane_center_position) * x_meters_per_pix
+      lane_center_position = (r_fit_x_int + l_fit_x_int) /2
+          center_dist = (car_position - lane_center_position) * x_meters_per_pix
+
 r_fit_x_int and l_fit_x_int are the x-intercepts of the right and left fits, respectively. The car position is the difference between these intercept points and the image midpoint (assuming that the camera is mounted at the center of the vehicle).
-
-
-
-
-
-
-
-
-
 
 
 ### Inverse transform and output For the final image we:
