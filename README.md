@@ -38,7 +38,7 @@ Using histogram the most likely position of the lanes were found out. Then a sli
 
 Sliding Windows Search for Lane markers  
 
-![Sliding window transform](/images/sliding_window.png)
+![Sliding window transform](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/sliding_window.png)
 
 ### Searching around previosly detected lane line 
 
@@ -46,7 +46,7 @@ Since consecutive frames are likely to have lane lines in roughly similar positi
 
 Sliding Windows Search for Lane markers. 
 
-![Sliding window transform](/images/sliding_window1.png)
+![Sliding window transform](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/sliding_window1.png)
 
 ### Inverse transform and output For the final image we:
 
