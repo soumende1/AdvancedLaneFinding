@@ -41,6 +41,6 @@ Using histogram the most likely position of the lanes were found out. Then a sli
 
 Sliding Windows Search for Lane markers  
 |:--------------------:|
- ![Sliding window](/images/perspective_transform.png)
+ ![Sliding window](/images/sliding_window.png)
 
 
