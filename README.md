@@ -86,9 +86,12 @@ r_fit_x_int and l_fit_x_int are the x-intercepts of the right and left fits, res
 
 ### Inverse transform and output For the final image we:
 
-Paint the lane area
-Perform an inverse perspective transform
-Combine the processed image with the original image.
+Next the following three taskes were carried out
+- Paint the lane area
+- Perform an inverse perspective transform
+- Combine the processed image with the original image.
+
+ A polygon was generated based on plots of the left and right fits, warped back to the perspective of the original image using the inverse perspective matrix Minv and overlaid onto the original image. The image below is an example of the results of the draw_lane function:
 
 ![final image](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/final_image.png)
 
