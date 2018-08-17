@@ -33,7 +33,7 @@ Next the RGB image was traslated in  HLS color space to obtain a binary threshol
 
 | Perspective Transform  | 
 |:--------------------:|
-|![Perspective transform](/images/color_transform.png)|
+|![Perspective transform](/images/perspective_transform.png)|
 
 
 
