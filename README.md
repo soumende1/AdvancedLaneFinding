@@ -58,7 +58,7 @@ Combine the processed image with the original image.
 ### Example Result We apply the pipeline to a test image. 
 The original image and the processed image are shown side by side.
 
-![radius image](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/image_radius.png)
+![radius image] (https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/image_radius.png)
 
 
 
