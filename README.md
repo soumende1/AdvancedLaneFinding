@@ -52,14 +52,14 @@ Using histogram the most likely position of the lanes were found out. The approa
 ![Histogram](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/histogram.PNG)
 
 
-Then a sliding window search, starting with the likely positions from the histogram was used to identify the lane markers for ahead portion of the road. 10 windows of width 100 pixels were used for sliding window approach. The x & y coordinates of non zeros pixels were found, then a polynomial curve fit for these coordinates and the lane lines are drawn.
+Then a sliding window search, starting with the likely positions from the histogram was used to identify the lane markers for ahead portion of the road. A set of 10 windows of width 100 pixels were used for sliding window approach. The x & y coordinates of non zeros pixels were found, then a polynomial curve fit for these coordinates and the lane lines are drawn.
 
 Sliding Windows Search for Lane markers.  
 ![Sliding window transform](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/sliding_window.png)
 
-### Searching around previosly detected lane line 
+### Searching around previosly detected lane lines 
 
-Since consecutive frames are likely to have lane lines in roughly similar positions, we search around a margin of 50 pixels of the previously detected lane lines.
+Since consecutive frames are likely to have lane lines in roughly similar positions, the search was done around a margin of 50 pixels of the previously detected lane lines.
 
 Sliding Windows Search for Lane markers. 
 
