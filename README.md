@@ -100,8 +100,21 @@ The original image and the processed image are shown side by side.
 
 ![radius image](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/image_radius.png)
 
-The Video
-The pipeline is applied to a video. Click on the image to watch the video or click here. You will be redirected to YouTube.
+### Fine tuning the model
+
+
+There were some frames where no lanes could be detected or the lanes might did make sense. The bad frames, were detected when the following conditions are met:
+
+- No pixels were detected using the sliding window search or search around the previously detected line.
+- The average gap between the lanes is less than 0.7 times or greater than 1.3 times the globally maintained moving average of the lane gap.
+
+Then the Averaging lanes were carried out: The lane for each frame is a simple average of 12 previously computed lanes using the get_averaged_line method
+
+
+  All the above techniques were used along with averaging and fallback techniques using the pipeline_final method.
+
+
+
 
 ![final Video](/images/project_video_output.gif)
 
