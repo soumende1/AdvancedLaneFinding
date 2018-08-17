@@ -23,7 +23,7 @@ The original image and the transformed image is shown here:
 
 ### Apply color transforms, gradient to create a threshold binary image
 
-Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image
+Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image:
 
 ![color transform](/images/color_transform.png)
 
@@ -43,7 +43,17 @@ Sliding Windows Search for Lane markers
 
 Since consecutive frames are likely to have lane lines in roughly similar positions, we search around a margin of 50 pixels of the previously detected lane lines.
 
-Sliding Windows Search for Lane markers 
+Sliding Windows Search for Lane markers. 
 
 ![Sliding window transform](/images/sliding_window1.png)
+
+### Inverse transform and output For the final image we:
+
+Paint the lane area
+Perform an inverse perspective transform
+Combine the processed image with the original image.
+
+![final image](/images/final_image.png)
+
+
 
