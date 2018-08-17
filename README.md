@@ -45,7 +45,14 @@ The vertices coordinates were used to perform a perspective transform. The polyg
 ![Perspective](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/perspective_transform.png)
 
 ### Detect lane pixels (sliding window search). 
-Using histogram the most likely position of the lanes were found out. Then a sliding window search, starting with the likely positions from the histogram was used to identify the lane markers for ahead portion of the road. 10 windows of width 100 pixels were used for sliding window approach. The x & y coordinates of non zeros pixels were found, then a polynomial curve fit for these coordinates and the lane lines are drawn.
+
+
+Using histogram the most likely position of the lanes were found out. The approach was to compute a histogram of the bottom half of the image and finds the bottom-most x position (or "base") of the left and right lane lines.
+
+![Histogram](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/perspective_transform.png)
+
+
+Then a sliding window search, starting with the likely positions from the histogram was used to identify the lane markers for ahead portion of the road. 10 windows of width 100 pixels were used for sliding window approach. The x & y coordinates of non zeros pixels were found, then a polynomial curve fit for these coordinates and the lane lines are drawn.
 
 Sliding Windows Search for Lane markers.  
 ![Sliding window transform](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/sliding_window.png)
