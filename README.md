@@ -22,6 +22,8 @@ The cal images have the following vector of Distortion Coeff (k1,k2,p1,p2,k3)
 Where, k1,k2,k3 are radial distrotion coefficients
 and p1,p2 are tangential distortion coefficients
 
+the camera coeffs are as follows:
+![before-after comparison](/images/camera coeffs.PNG)
 
 
 The below image depicts the corners drawn onto twenty chessboard images using the OpenCV function drawChessboardCorners:
