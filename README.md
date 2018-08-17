@@ -29,6 +29,12 @@ Next the RGB image was traslated in  HLS color space to obtain a binary threshol
 |:--------------------:|
 |![color transform](/images/color_transform.png)|
 
+###Perspective transform ("birds-eye view"). The vertices coordinates were used to perform a perspective transform. The polygon with these vertices is drawn on the image for visualization. Destination points are chosen such that straight lanes appear more or less parallel in the transformed image.
+
+| Perspective Transform  | 
+|:--------------------:|
+|![Perspective transform](/images/color_transform.png)|
+
 
 
 
