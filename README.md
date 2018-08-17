@@ -60,5 +60,10 @@ The original image and the processed image are shown side by side.
 
 ![radius image](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/image_radius.png)
 
+The Video
+The pipeline is applied to a video. Click on the image to watch the video or click here. You will be redirected to YouTube.
+
+![final Video](/images/project_video_output.gif)
+
 
 
