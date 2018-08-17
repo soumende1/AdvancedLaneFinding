@@ -25,31 +25,25 @@ The original image and the transformed image is shown here:
 
 Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image
 
-| Transform  | 
-|:--------------------:|
-|![color transform](/images/color_transform.png)|
+![color transform](/images/color_transform.png)
 
 ### Perspective transform ("birds-eye view"). 
 The vertices coordinates were used to perform a perspective transform. The polygon with these vertices is drawn on the image for visualization. Destination points are chosen such that straight lanes appear more or less parallel in the transformed image.
 
-| Perspective Transform  | 
-|:--------------------:|
-|![Perspective transform](/images/perspective_transform.png)|
+![Perspective transform](/images/perspective_transform.png)
 
 ### Detect lane pixels (sliding window search). 
 Using histogram the most likely position of the lanes were found out. Then a sliding window search, starting with the likely positions from the histogram was used to identify the lane markers for ahead portion of the road. 10 windows of width 100 pixels were used for sliding window approach. The x & y coordinates of non zeros pixels were found, then a polynomial curve fit for these coordinates and the lane lines are drawn.
 
 Sliding Windows Search for Lane markers  
-| sliding window Transform  | 
-|:--------------------:|
-|![Sliding window transform](/images/sliding_window.png)|
+
+![Sliding window transform](/images/sliding_window.png)
 
 ### Searching around previosly detected lane line 
 
 Since consecutive frames are likely to have lane lines in roughly similar positions, we search around a margin of 50 pixels of the previously detected lane lines.
 
 Sliding Windows Search for Lane markers 
-| Sliding window Transform  | 
-|:--------------------:|
-|![Sliding window transform](/images/sliding_window1.png)|
+
+![Sliding window transform](/images/sliding_window1.png)
 
