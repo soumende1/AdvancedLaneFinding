@@ -23,7 +23,8 @@ Where, k1,k2,k3 are radial distrotion coefficients
 and p1,p2 are tangential distortion coefficients
 
 the camera coeffs are as follows:
-![before-after comparison](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/camera%20coeffs.PNG)
+
+![Camera Coeffs](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/camera%20coeffs.PNG)
 
 
 The below image depicts the corners drawn onto twenty chessboard images using the OpenCV function drawChessboardCorners:
