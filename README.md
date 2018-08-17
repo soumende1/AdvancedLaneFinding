@@ -30,7 +30,7 @@ Next the RGB image was traslated in  HLS color space to obtain a binary threshol
 ### Perspective transform ("birds-eye view"). 
 The vertices coordinates were used to perform a perspective transform. The polygon with these vertices is drawn on the image for visualization. Destination points are chosen such that straight lanes appear more or less parallel in the transformed image.
 
-![Perspective transform](/images/perspective_transform.png)
+![Perspective transform](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/perspective_transform.png)
 
 ### Detect lane pixels (sliding window search). 
 Using histogram the most likely position of the lanes were found out. Then a sliding window search, starting with the likely positions from the histogram was used to identify the lane markers for ahead portion of the road. 10 windows of width 100 pixels were used for sliding window approach. The x & y coordinates of non zeros pixels were found, then a polynomial curve fit for these coordinates and the lane lines are drawn.
