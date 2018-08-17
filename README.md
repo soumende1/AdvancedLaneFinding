@@ -21,7 +21,7 @@ The OpenCV functions findChessboardCorners and calibrateCamera are used for imag
 The original image and the transformed image is shown here:
 ![before-after comparison](/images/undistort_output.png)
 
-###Apply color transforms, gradient to create a threshold binary image
+### Apply color transforms, gradient to create a threshold binary image
 
 Next the RGB image was traslated in  HLS color space to obtain a binary thresholded image
 
@@ -29,7 +29,8 @@ Next the RGB image was traslated in  HLS color space to obtain a binary threshol
 |:--------------------:|
 |![color transform](/images/color_transform.png)|
 
-###Perspective transform ("birds-eye view"). The vertices coordinates were used to perform a perspective transform. The polygon with these vertices is drawn on the image for visualization. Destination points are chosen such that straight lanes appear more or less parallel in the transformed image.
+### Perspective transform ("birds-eye view"). 
+The vertices coordinates were used to perform a perspective transform. The polygon with these vertices is drawn on the image for visualization. Destination points are chosen such that straight lanes appear more or less parallel in the transformed image.
 
 | Perspective Transform  | 
 |:--------------------:|
