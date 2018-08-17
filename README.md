@@ -16,13 +16,16 @@ The basic objective of this project is to:
 
 The code for this step is contained in the first two code cells of the Jupyter notebook project.ipynb.
 
-The OpenCV functions findChessboardCorners and calibrateCamera are used for image calibration. A number of images of a chessboard, taken from different angles with the same camera, comprise the input. Arrays of object points, corresponding to the location (essentially indices) of internal corners of a chessboard, and image points, the pixel locations of the internal chessboard corners determined by findChessboardCorners, are fed to calibrateCamera which returns camera calibration and distortion coefficients. These can then be used by the OpenCV undistort function to undo the effects of distortion on any image produced by the same camera. Generally, these coefficients will not change for a given camera (and lens). 
-The cal images have the following vector of Distortion Coeff (k1,k2,p1,p2,k3)
-(-2.41018767e-01 ,-5.30665431e-02 ,-1.15811319e-03 ,-1.28284935e-04, 2.67026162e-02)
-Where, k1,k2,k3 are radial distrotion coefficients
-and p1,p2 are tangential distortion coefficients
+The OpenCV functions findChessboardCorners and calibrateCamera were used for image calibration. A number of images of a chessboard, taken from different angles with the same camera, comprise the input. Arrays of object points, corresponding to the location (essentially indices) of internal corners of a chessboard, and image points, the pixel locations of the internal chessboard corners determined by findChessboardCorners, are fed to calibrateCamera which returns camera calibration and distortion coefficients. These can then be used by the OpenCV undistort function to undo the effects of distortion on any image produced by the same camera. Generally, these coefficients will not change for a given camera (and lens). 
+The cal images have the following vector of **Distortion Coeff** (k1,k2,p1,p2,k3)
 
-the camera coeffs are as follows:
+(-2.41018767e-01 ,-5.30665431e-02 ,-1.15811319e-03 ,-1.28284935e-04, 2.67026162e-02)
+          
+          Where, k1,k2,k3 are radial distrotion coefficients
+                                    
+                                    and p1,p2 are tangential distortion coefficients
+
+The **camera coeffs** are as follows:
 
 ![Camera Coeffs](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/camera%20coeffs.PNG)
 
