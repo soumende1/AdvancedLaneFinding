@@ -53,7 +53,7 @@ Paint the lane area
 Perform an inverse perspective transform
 Combine the processed image with the original image.
 
-![final image](/images/final_image.png)
+![final image](https://github.com/soumende1/AdvancedLaneFinding/blob/master/images/final_image.png)
 
 
 
