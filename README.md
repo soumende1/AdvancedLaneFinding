@@ -117,5 +117,25 @@ Then the Averaging lanes were carried out: The lane for each frame is a simple a
 
 ![final Video](/images/project_video_output.gif)
 
+### The Challenge Video
+
+
+
+## Problems or Issues Faced
+
+Briefly discuss any problems / issues you faced in your implementation of this project. Where will your pipeline likely fail? What could you do to make it more robust?
+
+The challenges I faced and future improvement opportunities can be categorized in to the following buckets:
+
+### Gradient & Color Thresholding
+The problems I encountered were almost primarily due to lighting conditions, shadows, discoloration, etc. It wasn't difficult to dial in threshold parameters to get the pipeline to perform well on the original project video I had to experiment a lot with gradient and color channel thresholding. The lanes lines in the challenge video was  difficult to detect as they were either too bright or too dull. This prompted me to have R & G channel thresholding and L channel thresholding. Tuning the threshholds for each transform is time consuming work. One setting may work for one picture but not work for other pictures. 
+
+### Bad Frames
+The challenge video has a section where the car goes underneath a tunnel and no lanes are detected. To tackle this I had to resort to averaging over the previous well detected frames. The lanes in the challenge video change in color, shape and direction. I had to experiment with color threholds to tackle this. Ultimately I had to make use of R, G channels and L channel thresholds.
+
+### Points of failure & Areas of Improvement
+The pipeline seems to fail for the harder challenge video. This video has sharper turns and at very short intervals.I think what I could improve is. to tackle this in future we can explore taking  a better perspective transform. We can also explore taking the average over a smaller number of frames. Right now I am averaging over 12 frames. This fails for the harder challenge video since the shape and direction of lanes changes quite fast.
+
+
 
 
